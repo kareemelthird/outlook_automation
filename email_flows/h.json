@@ -1,0 +1,20 @@
+{
+    "to_email": "k.hassan@modern-egypt.com",
+    "cc_email": "k.hassan@modern-egypt.com",
+    "subject": "test mail ",
+    "body": "adsad\n[TABLE: LogTable]\n\n",
+    "attachments": "D:/Modern Egypt/G7 Mall - Documents Submission/CPR/CPR-00003.xlsx, D:/Modern Egypt/G7 Mall - Documents Submission/CPR/CPR-00004.xlsx",
+    "selected_days": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "scheduled_time": "08:00",
+    "tables_to_extract": [
+        "CPR-00003.xlsx - log - LogTable"
+    ]
+}
