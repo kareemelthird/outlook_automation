@@ -12,7 +12,11 @@ def find_pythonw():
         "C:\Python312\pythonw.exe",
         "C:\Python313\pythonw.exe",
         r"C:\Program Files\Python39\pythonw.exe",
-        r"C:\Program Files\Python310\pythonw.exe"
+        r"C:\Program Files\Python310\pythonw.exe",
+        r"C:\Program Files\Python311\pythonw.exe",
+        r"C:\Program Files\Python312\pythonw.exe",
+        r"C:\Program Files\Python313\pythonw.exe",
+        r"C:\Program Files\Python314\pythonw.exe",
     ]
     for path in common_paths:
         if os.path.exists(path):
