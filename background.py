@@ -13,6 +13,7 @@ from plyer import notification
 import tkinter as tk
 from home import HomeApp
 from ui_triggered_flow import load_triggered_flow_config
+import ctypes
 
 # Setup logging
 logging.basicConfig(filename='email_automation.log', level=logging.INFO,

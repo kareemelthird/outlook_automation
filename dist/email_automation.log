@@ -1,0 +1,13 @@
+2024-04-12 22:37:04,595:ERROR:An error occurred: [WinError 3] The system cannot find the path specified: 'email_flows'
+2024-04-12 22:37:53,453:ERROR:An error occurred when calling message handler
+Traceback (most recent call last):
+  File "pystray\_win32.py", line 412, in _dispatcher
+  File "pystray\_win32.py", line 224, in _on_notify
+  File "pystray\_base.py", line 328, in inner
+  File "pystray\_base.py", line 453, in __call__
+  File "pystray\_base.py", line 548, in wrapper0
+  File "background.py", line 28, in open_home_screen
+  File "home.py", line 47, in __init__
+  File "home.py", line 131, in create_flow_management_section
+  File "home.py", line 206, in update_listbox
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'email_flows'
