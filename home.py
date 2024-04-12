@@ -14,7 +14,7 @@ import sys
 def run_background_process():
     import subprocess
     # Assuming background.py is in the same directory
-    subprocess.run([sys.executable, 'background.py'])
+    #subprocess.run([sys.executable, 'background.py'])
 
 
 def load_and_filter_log_entries(log_file_path, flow_type):

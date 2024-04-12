@@ -24,9 +24,13 @@ def open_home_screen():
         root.deiconify()  # Brings the window to the front if minimized or hidden
     else:
         root = tk.Tk()  # Create a new Tk root if it does not exist
+        root.protocol("WM_DELETE_WINDOW", hide_window)  # Intercept close button
         app = HomeApp(root)  # Assuming HomeApp is your main application class
         root.mainloop()
 
+def hide_window():
+    global root
+    root.withdraw()  # Hide the window instead of closing
 
 class FolderWatcher:
     def __init__(self, folder_path, email_details, flow_name):
@@ -149,7 +153,9 @@ def retry_send_email(flow, flow_file, retries):
 def on_clicked(icon, item):
     icon.stop()
     os._exit(1)
-
+if 'root' in globals():
+    root.withdraw()  # Hide the main window instead of stopping the application
+    # Do not call icon.stop() unless you want to actually exit the app
 def setup(icon):
     pythoncom.CoInitialize()  # Initialize COM
     icon.visible = True
@@ -162,9 +168,14 @@ def setup(icon):
     icon.menu = menu_items
 
     start_folder_watcher()  # Start watching folders
-    while True:
-        check_and_send_emails(icon)
-        time.sleep(60)  # Check every minute
+
+    try:
+        while True:
+            check_and_send_emails(icon)
+            time.sleep(60)  # Check every minute
+    except Exception as e:
+        logging.error(f"An error occurred: {e}")
+    finally:
         pythoncom.CoUninitialize()
 
 def start_folder_watcher():

@@ -1,6 +1,6 @@
 Babel==2.14.0
 contourpy==1.2.1
-cycler==0.12.1
+cycler==0.12.1  
 et-xmlfile==1.1.0
 fonttools==4.51.0
 future==1.0.0
@@ -23,4 +23,5 @@ six==1.16.0
 tkcalendar==1.6.1
 tzdata==2024.1
 watchdog==4.0.0
+winshell==0.6
 xlrd==2.0.1
