@@ -72,3 +72,27 @@ TypeError: 'tuple' object is not callable
 2024-04-12 22:36:22,496:WARNING:The function passed as setup to the icon did not finish within 5.0 seconds after icon was stopped
 2024-04-12 22:48:07,735:WARNING:The function passed as setup to the icon did not finish within 5.0 seconds after icon was stopped
 2024-04-12 22:49:02,296:INFO:Triggered Flow Detected: Test Triggered, Type: Triggered, To: k.hassa@modern-egypt.com, CC: , Attachments: None
+2024-04-12 23:27:15,118:WARNING:The function passed as setup to the icon did not finish within 5.0 seconds after icon was stopped
+2024-04-13 01:22:40,567:INFO:Triggered Flow Detected: Test Triggered, Type: Triggered, To: k.hassa@modern-egypt.com, CC: , Attachments: None
+2024-04-13 01:24:18,607:INFO:Scheduled Flow Detected: Test Schedule 2, Type: Scheduled, To: sadsa@sadasd.sad, CC: , Attachments: D:/Modern Egypt/G7 Mall - Documents Submission/CPR/CPR-00006.xlsx, D:/Modern Egypt/G7 Mall - Documents Submission/CPR/CPR-00005.xlsx, Tables: ['CPR-00006.xlsx - log - LogTable', 'CPR-00005.xlsx - log - LogTable'], Scheduled Time: 01:24
+2024-04-13 01:24:19,998:INFO:Schedule Email sent successfully for 'Test Schedule 2', retries left: 3
+2024-04-13 01:26:31,296:ERROR:An error occurred when calling message handler
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\pystray\_win32.py", line 412, in _dispatcher
+    return int(icon._message_handlers.get(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\pystray\_win32.py", line 201, in _on_notify
+    self()
+  File "C:\Python312\Lib\site-packages\pystray\_base.py", line 110, in __call__
+    self._menu(self)
+TypeError: 'tuple' object is not callable
+2024-04-13 01:26:31,452:ERROR:An error occurred when calling message handler
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\pystray\_win32.py", line 412, in _dispatcher
+    return int(icon._message_handlers.get(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\pystray\_win32.py", line 201, in _on_notify
+    self()
+  File "C:\Python312\Lib\site-packages\pystray\_base.py", line 110, in __call__
+    self._menu(self)
+TypeError: 'tuple' object is not callable

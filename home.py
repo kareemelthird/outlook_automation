@@ -52,8 +52,7 @@ class HomeApp:
                                             self.new_triggered_flow, 
                                             self.edit_triggered_flow, 
                                             self.delete_flow)
-        # Missed Runs Section
-        self.create_missed_runs_section()
+
 
     def create_missed_runs_section(self):
         missed_runs_frame = ttk.LabelFrame(self.main_frame, text="Missed Runs")
@@ -66,16 +65,8 @@ class HomeApp:
                                     command=self.refresh_missed_runs)
         refresh_button.pack(side='bottom', pady=5)
 
-        self.refresh_missed_runs()
 
-    def refresh_missed_runs(self):
-        self.missed_runs_list.delete(0, tk.END)  # Clear existing entries
-        missed_runs = analyze_missed_executions()
-        for flow_name, dates in missed_runs.items():
-            for date in dates:
-                self.missed_runs_list.insert(tk.END, f"{flow_name}: Missed on {date}")
 
-    
 
 
     def create_footer(self):
@@ -113,7 +104,6 @@ class HomeApp:
 
         lb_flows = tk.Listbox(management_frame, height=5)
         lb_flows.pack(pady=5, padx=5, fill='both', expand=True)
-        lb_flows.bind('<<ListboxSelect>>', lambda event: self.refresh_log(event, log_text, folder))  # Bind selection event
 
 
         btn_frame = ttk.Frame(management_frame)
