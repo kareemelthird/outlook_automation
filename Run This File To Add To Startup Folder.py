@@ -1,27 +1,28 @@
 import os
-import winshell
 import sys
+import winshell
 
 def create_shortcut_to_startup():
-    # Find the pythonw.exe path in the same directory as the current Python interpreter
-    pythonw_path = sys.executable.replace("python.exe", "pythonw.exe")
+    # Automatically find the pythonw.exe path in the same directory as the current Python interpreter
+    pythonw_path = sys.executable.replace("python.exe", "pythonw.exe") if "python.exe" in sys.executable else sys.executable
     
-    # Absolute path to the script you want to run at startup
-    script_path = r"D:\py\pr\Outook_Automation_Tool\background.pyw"
+    # Determine the absolute path to the script you want to run at startup
+    script_directory = os.path.dirname(os.path.abspath(__file__))  # Directory of this script
+    script_path = os.path.join(script_directory, "background.pyw")  # Adjust filename if necessary
     
-    # Path to the Startup folder
+    # Path to the Startup folder for the current user
     startup_folder = winshell.startup()
     
-    # Full path for the new shortcut
+    # Full path for the new shortcut in the Startup folder
     shortcut_path = os.path.join(startup_folder, "BackgroundApp.lnk")
     
     # Create a shortcut to run the script using pythonw.exe
     with winshell.shortcut(shortcut_path) as shortcut:
         shortcut.path = pythonw_path
-        shortcut.arguments = script_path
+        shortcut.arguments = f'"{script_path}"'
         shortcut.description = "Run my Python script silently on startup"
-        shortcut.working_directory = os.path.dirname(script_path)
-        shortcut.icon_location = (script_path, 0)
+        shortcut.working_directory = script_directory
+        shortcut.icon_location = (script_path, 0)  # Optionally, specify an icon
 
     print(f"Shortcut created: {shortcut_path}")
 

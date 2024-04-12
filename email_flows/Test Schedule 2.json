@@ -1,0 +1,21 @@
+{
+    "to_email": "sadsa@sadasd.sad",
+    "cc_email": "",
+    "subject": "{now}",
+    "body": "{today}\n[TABLE: CPR-00006.xlsx - LogTable]\n\n[TABLE: CPR-00005.xlsx - LogTable]\n\n\n",
+    "attachments": "D:/Modern Egypt/G7 Mall - Documents Submission/CPR/CPR-00006.xlsx, D:/Modern Egypt/G7 Mall - Documents Submission/CPR/CPR-00005.xlsx",
+    "selected_days": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+    ],
+    "scheduled_time": "21:46",
+    "tables_to_extract": [
+        "CPR-00006.xlsx - log - LogTable",
+        "CPR-00005.xlsx - log - LogTable"
+    ]
+}

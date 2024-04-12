@@ -1,0 +1,20 @@
+{
+    "to_email": "k.hassan@modern-egypt.com",
+    "cc_email": "",
+    "subject": "Test Schedule Flow {now}",
+    "body": "{today}[TABLE: CPR-00001.xlsx - LogTable]\n\n\n\n[TABLE: CPR-00009.xlsx - log - LogTable]\n\n",
+    "attachments": "D:/Modern Egypt/G7 Mall - Documents Submission/CPR/CPR-00009.xlsx, D:/Modern Egypt/G7 Mall - Documents Submission/CPR/CPR-00001.xlsx",
+    "selected_days": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+    ],
+    "scheduled_time": "21:06",
+    "tables_to_extract": [
+        "CPR-00009.xlsx - log - LogTable"
+    ]
+}

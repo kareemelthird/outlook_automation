@@ -11,10 +11,7 @@ import multiprocessing
 import sys
 
 
-def run_background_process():
-    import subprocess
-    # Assuming background.py is in the same directory
-    #subprocess.run([sys.executable, 'background.py'])
+
 
 
 def load_and_filter_log_entries(log_file_path, flow_type):
@@ -33,8 +30,7 @@ class HomeApp:
         self.root = root
         self.root.title("K3 Automation Tool")
         self.root.geometry("880x660")
-        self.background_process = multiprocessing.Process(target=run_background_process)
-        self.background_process.start()
+
 
         # Main Frame
         self.main_frame = ttk.Frame(root)

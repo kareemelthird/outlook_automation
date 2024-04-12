@@ -1,3 +1,4 @@
+#main_ui.py
 import os
 import tkinter as tk
 from tkinter import ttk, scrolledtext
@@ -180,6 +181,8 @@ class EmailAutomationApp:
             if item not in self.selected_table_identifiers:
                 self.selected_table_identifiers.append(item)
                 insert_table_into_body([item], self.body_text)  # Insert one item at a time
+            else:
+                messagebox.showinfo("Info", f"{item} is already added.")
 
 
 
@@ -207,7 +210,11 @@ class EmailAutomationApp:
         self.time_entry.delete(0, tk.END)
         self.time_entry.insert(0, settings.get('scheduled_time', ''))
 
-        self.selected_table_identifiers = []  # Initialize an empty list to store table identifiers
+    # Load tables_to_extract if available
+        self.table_list.delete(0, tk.END)  # Clear existing entries
+        self.selected_table_identifiers = settings.get('tables_to_extract', [])
+        for table_identifier in self.selected_table_identifiers:
+            self.table_list.insert(tk.END, table_identifier)
         self.current_flow_name = flow_name  # Set current_flow_name for existing flow
 
 

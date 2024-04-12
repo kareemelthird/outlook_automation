@@ -1,173 +1,57 @@
-2024-04-12 17:45:57,787:ERROR:An error occurred when calling message handler
-Traceback (most recent call last):
-  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_win32.py", line 412, in _dispatcher
-    return int(icon._message_handlers.get(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_win32.py", line 224, in _on_notify
-    descriptors[index - 1](self)
-  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_base.py", line 328, in inner
-    callback(self)
-  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_base.py", line 453, in __call__
-    return self._action(icon, self)
-           ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "d:\py\pr\email_automation_tool\background.py", line 139, in on_clicked
-    icon.stop()
-  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_base.py", line 252, in stop
-    self._setup_thread.join(timeout=self.SETUP_THREAD_TIMEOUT)
-  File "C:\Python312\Lib\threading.py", line 1130, in join
-    self._wait_for_tstate_lock(timeout=max(timeout, 0))
-  File "C:\Python312\Lib\threading.py", line 1146, in _wait_for_tstate_lock
-    if lock.acquire(block, timeout):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-KeyboardInterrupt
-2024-04-12 17:47:21,315:ERROR:An error occurred when calling message handler
-Traceback (most recent call last):
-  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_win32.py", line 412, in _dispatcher
-    return int(icon._message_handlers.get(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_win32.py", line 224, in _on_notify
-    descriptors[index - 1](self)
-  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_base.py", line 328, in inner
-    callback(self)
-  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_base.py", line 453, in __call__
-    return self._action(icon, self)
-           ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "d:\py\pr\email_automation_tool\background.py", line 150, in on_clicked
-    icon.stop()
-  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_base.py", line 252, in stop
-    self._setup_thread.join(timeout=self.SETUP_THREAD_TIMEOUT)
-  File "C:\Python312\Lib\threading.py", line 1130, in join
-    self._wait_for_tstate_lock(timeout=max(timeout, 0))
-  File "C:\Python312\Lib\threading.py", line 1146, in _wait_for_tstate_lock
-    if lock.acquire(block, timeout):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-KeyboardInterrupt
-2024-04-12 17:47:33,680:ERROR:An error occurred when calling message handler
-Traceback (most recent call last):
-  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_win32.py", line 412, in _dispatcher
-    return int(icon._message_handlers.get(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_win32.py", line 224, in _on_notify
-    descriptors[index - 1](self)
-  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_base.py", line 328, in inner
-    callback(self)
-  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_base.py", line 453, in __call__
-    return self._action(icon, self)
-           ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "d:\py\pr\email_automation_tool\background.py", line 150, in on_clicked
-    icon.stop()
-  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_base.py", line 252, in stop
-    self._setup_thread.join(timeout=self.SETUP_THREAD_TIMEOUT)
-  File "C:\Python312\Lib\threading.py", line 1130, in join
-    self._wait_for_tstate_lock(timeout=max(timeout, 0))
-  File "C:\Python312\Lib\threading.py", line 1146, in _wait_for_tstate_lock
-    if lock.acquire(block, timeout):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-KeyboardInterrupt
-2024-04-12 18:21:52,868:WARNING:The function passed as setup to the icon did not finish within 5.0 seconds after icon was stopped
-2024-04-12 18:43:05,533:ERROR:An error occurred when calling message handler
+2024-04-12 20:25:48,481:INFO:Triggered Flow Detected: Test Triggered, Type: Triggered, To: k.hassan@modern-egypt.com, CC: , Attachments: None
+2024-04-12 20:32:33,529:INFO:Scheduled Flow Detected: Test Schedule, Type: Scheduled, To: k.hassan@modern-egypt.com, CC: , Attachments: D:/Modern Egypt/G7 Mall - Documents Submission/CPR/CPR-00009.xlsx, Tables: [], Scheduled Time: 20:32
+2024-04-12 20:32:34,513:INFO:Schedule Email sent successfully for 'Test Schedule', retries left: 3
+2024-04-12 20:35:03,582:ERROR:An error occurred when calling message handler
 Traceback (most recent call last):
   File "D:\py\pr\Outook_Automation_Tool\.venv\Lib\site-packages\pystray\_win32.py", line 412, in _dispatcher
     return int(icon._message_handlers.get(
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\py\pr\Outook_Automation_Tool\.venv\Lib\site-packages\pystray\_win32.py", line 224, in _on_notify
-    descriptors[index - 1](self)
-  File "D:\py\pr\Outook_Automation_Tool\.venv\Lib\site-packages\pystray\_base.py", line 328, in inner
-    callback(self)
-  File "D:\py\pr\Outook_Automation_Tool\.venv\Lib\site-packages\pystray\_base.py", line 453, in __call__
-    return self._action(icon, self)
-           ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "d:\py\pr\Outook_Automation_Tool\background.py", line 150, in on_clicked
-    icon.stop()
-  File "D:\py\pr\Outook_Automation_Tool\.venv\Lib\site-packages\pystray\_base.py", line 252, in stop
-    self._setup_thread.join(timeout=self.SETUP_THREAD_TIMEOUT)
-  File "C:\Python312\Lib\threading.py", line 1130, in join
-    self._wait_for_tstate_lock(timeout=max(timeout, 0))
-  File "C:\Python312\Lib\threading.py", line 1146, in _wait_for_tstate_lock
-    if lock.acquire(block, timeout):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-KeyboardInterrupt
-2024-04-12 18:43:06,835:ERROR:An error occurred when calling message handler
+  File "D:\py\pr\Outook_Automation_Tool\.venv\Lib\site-packages\pystray\_win32.py", line 201, in _on_notify
+    self()
+  File "D:\py\pr\Outook_Automation_Tool\.venv\Lib\site-packages\pystray\_base.py", line 110, in __call__
+    self._menu(self)
+TypeError: 'tuple' object is not callable
+2024-04-12 20:35:03,753:ERROR:An error occurred when calling message handler
 Traceback (most recent call last):
   File "D:\py\pr\Outook_Automation_Tool\.venv\Lib\site-packages\pystray\_win32.py", line 412, in _dispatcher
     return int(icon._message_handlers.get(
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\py\pr\Outook_Automation_Tool\.venv\Lib\site-packages\pystray\_win32.py", line 224, in _on_notify
-    descriptors[index - 1](self)
-  File "D:\py\pr\Outook_Automation_Tool\.venv\Lib\site-packages\pystray\_base.py", line 328, in inner
-    callback(self)
-  File "D:\py\pr\Outook_Automation_Tool\.venv\Lib\site-packages\pystray\_base.py", line 453, in __call__
-    return self._action(icon, self)
-           ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "d:\py\pr\Outook_Automation_Tool\background.py", line 150, in on_clicked
-    icon.stop()
-  File "D:\py\pr\Outook_Automation_Tool\.venv\Lib\site-packages\pystray\_base.py", line 252, in stop
-    self._setup_thread.join(timeout=self.SETUP_THREAD_TIMEOUT)
-  File "C:\Python312\Lib\threading.py", line 1130, in join
-    self._wait_for_tstate_lock(timeout=max(timeout, 0))
-  File "C:\Python312\Lib\threading.py", line 1146, in _wait_for_tstate_lock
-    if lock.acquire(block, timeout):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-KeyboardInterrupt
-2024-04-12 18:45:59,341:WARNING:The function passed as setup to the icon did not finish within 5.0 seconds after icon was stopped
-2024-04-12 19:00:12,072:WARNING:The function passed as setup to the icon did not finish within 5.0 seconds after icon was stopped
-2024-04-12 19:22:24,873:WARNING:The function passed as setup to the icon did not finish within 5.0 seconds after icon was stopped
-2024-04-12 19:47:54,471:WARNING:The function passed as setup to the icon did not finish within 5.0 seconds after icon was stopped
-2024-04-12 19:50:09,552:WARNING:The function passed as setup to the icon did not finish within 5.0 seconds after icon was stopped
-2024-04-12 19:50:12,302:WARNING:The function passed as setup to the icon did not finish within 5.0 seconds after icon was stopped
-2024-04-12 20:18:03,219:ERROR:An error occurred when calling message handler
-Traceback (most recent call last):
-  File "D:\py\pr\Outook_Automation_Tool\.venv\Lib\site-packages\pystray\_win32.py", line 412, in _dispatcher
-    return int(icon._message_handlers.get(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\py\pr\Outook_Automation_Tool\.venv\Lib\site-packages\pystray\_win32.py", line 224, in _on_notify
-    descriptors[index - 1](self)
-  File "D:\py\pr\Outook_Automation_Tool\.venv\Lib\site-packages\pystray\_base.py", line 328, in inner
-    callback(self)
-  File "D:\py\pr\Outook_Automation_Tool\.venv\Lib\site-packages\pystray\_base.py", line 453, in __call__
-    return self._action(icon, self)
-           ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\py\pr\Outook_Automation_Tool\.venv\Lib\site-packages\pystray\_base.py", line 548, in wrapper0
-    return action()
-           ^^^^^^^^
-  File "D:\py\pr\Outook_Automation_Tool\background.pyw", line 28, in open_home_screen
-    app = HomeApp(root)  # Assuming HomeApp is your main application class
-          ^^^^^^^^^^^^^
-  File "D:\py\pr\Outook_Automation_Tool\home.py", line 37, in __init__
-    self.background_process.start()
-  File "C:\Python312\Lib\multiprocessing\process.py", line 121, in start
-    self._popen = self._Popen(self)
-                  ^^^^^^^^^^^^^^^^^
-  File "C:\Python312\Lib\multiprocessing\context.py", line 224, in _Popen
-    return _default_context.get_context().Process._Popen(process_obj)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Python312\Lib\multiprocessing\context.py", line 337, in _Popen
-    return Popen(process_obj)
-           ^^^^^^^^^^^^^^^^^^
-  File "C:\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 45, in __init__
-    prep_data = spawn.get_preparation_data(process_obj._name)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Python312\Lib\multiprocessing\spawn.py", line 164, in get_preparation_data
-    _check_not_importing_main()
-  File "C:\Python312\Lib\multiprocessing\spawn.py", line 140, in _check_not_importing_main
-    raise RuntimeError('''
-RuntimeError: 
-        An attempt has been made to start a new process before the
-        current process has finished its bootstrapping phase.
-
-        This probably means that you are not using fork to start your
-        child processes and you have forgotten to use the proper idiom
-        in the main module:
-
-            if __name__ == '__main__':
-                freeze_support()
-                ...
-
-        The "freeze_support()" line can be omitted if the program
-        is not going to be frozen to produce an executable.
-
-        To fix this issue, refer to the "Safe importing of main module"
-        section in https://docs.python.org/3/library/multiprocessing.html
-        
-2024-04-12 20:18:37,430:WARNING:The function passed as setup to the icon did not finish within 5.0 seconds after icon was stopped
-2024-04-12 20:18:40,211:WARNING:The function passed as setup to the icon did not finish within 5.0 seconds after icon was stopped
+  File "D:\py\pr\Outook_Automation_Tool\.venv\Lib\site-packages\pystray\_win32.py", line 201, in _on_notify
+    self()
+  File "D:\py\pr\Outook_Automation_Tool\.venv\Lib\site-packages\pystray\_base.py", line 110, in __call__
+    self._menu(self)
+TypeError: 'tuple' object is not callable
+2024-04-12 20:38:55,118:WARNING:The function passed as setup to the icon did not finish within 5.0 seconds after icon was stopped
+2024-04-12 20:42:18,987:INFO:Scheduled Flow Detected: Test Schedule, Type: Scheduled, To: k.hassan@modern-egypt.com, CC: , Attachments: D:/Modern Egypt/G7 Mall - Documents Submission/CPR/CPR-00003.xlsx, Tables: ['CPR-00003.xlsx - log - LogTable'], Scheduled Time: 20:42
+2024-04-12 20:42:19,972:INFO:Schedule Email sent successfully for 'Test Schedule', retries left: 3
+2024-04-12 20:46:23,010:WARNING:The function passed as setup to the icon did not finish within 5.0 seconds after icon was stopped
+2024-04-12 20:47:53,192:INFO:Scheduled Flow Detected: Test Schedule, Type: Scheduled, To: k.hassan@modern-egypt.com, CC: , Attachments: D:/Modern Egypt/G7 Mall - Documents Submission/CPR/CPR-00003.xlsx, Tables: [], Scheduled Time: 20:47
+2024-04-12 20:47:53,286:INFO:Schedule Email sent successfully for 'Test Schedule', retries left: 3
+2024-04-12 20:48:34,049:WARNING:The function passed as setup to the icon did not finish within 5.0 seconds after icon was stopped
+2024-04-12 20:50:48,684:INFO:Scheduled Flow Detected: Test Schedule, Type: Scheduled, To: k.hassan@modern-egypt.com, CC: , Attachments: D:/Modern Egypt/G7 Mall - Documents Submission/CPR/CPR-00007.xlsx, Tables: [], Scheduled Time: 20:50
+2024-04-12 20:50:48,747:INFO:Schedule Email sent successfully for 'Test Schedule', retries left: 3
+2024-04-12 20:53:48,764:INFO:Scheduled Flow Detected: Test Schedule, Type: Scheduled, To: k.hassan@modern-egypt.com, CC: , Attachments: D:/Modern Egypt/G7 Mall - Documents Submission/CPR/CPR-00007.xlsx, Tables: [], Scheduled Time: 20:53
+2024-04-12 20:53:48,827:INFO:Schedule Email sent successfully for 'Test Schedule', retries left: 3
+2024-04-12 20:55:48,830:INFO:Scheduled Flow Detected: Test Schedule, Type: Scheduled, To: k.hassan@modern-egypt.com, CC: , Attachments: D:/Modern Egypt/G7 Mall - Documents Submission/CPR/CPR-00007.xlsx, Tables: [], Scheduled Time: 20:55
+2024-04-12 20:55:48,893:INFO:Schedule Email sent successfully for 'Test Schedule', retries left: 3
+2024-04-12 20:56:56,192:WARNING:The function passed as setup to the icon did not finish within 5.0 seconds after icon was stopped
+2024-04-12 20:59:02,774:INFO:Scheduled Flow Detected: Test Schedule, Type: Scheduled, To: k.hassan@modern-egypt.com, CC: , Attachments: D:/Modern Egypt/G7 Mall - Documents Submission/CPR/CPR-00001.xlsx, Tables: [], Scheduled Time: 20:59
+2024-04-12 20:59:02,874:INFO:Schedule Email sent successfully for 'Test Schedule', retries left: 3
+2024-04-12 21:05:02,894:INFO:Scheduled Flow Detected: Test Schedule, Type: Scheduled, To: k.hassan@modern-egypt.com, CC: , Attachments: D:/Modern Egypt/G7 Mall - Documents Submission/CPR/CPR-00001.xlsx, Tables: [], Scheduled Time: 21:05
+2024-04-12 21:05:02,956:INFO:Schedule Email sent successfully for 'Test Schedule', retries left: 3
+2024-04-12 21:06:02,972:INFO:Scheduled Flow Detected: Test Schedule, Type: Scheduled, To: k.hassan@modern-egypt.com, CC: , Attachments: D:/Modern Egypt/G7 Mall - Documents Submission/CPR/CPR-00009.xlsx, D:/Modern Egypt/G7 Mall - Documents Submission/CPR/CPR-00001.xlsx, Tables: ['CPR-00009.xlsx - log - LogTable'], Scheduled Time: 21:06
+2024-04-12 21:06:03,046:INFO:Schedule Email sent successfully for 'Test Schedule', retries left: 3
+2024-04-12 21:08:03,065:INFO:Scheduled Flow Detected: Test Schedule 2, Type: Scheduled, To: SDSAd@SADA, CC: , Attachments: D:/Modern Egypt/G7 Mall - Documents Submission/CPR/CPR-00008.xlsx, Tables: ['CPR-00008.xlsx - log - LogTable'], Scheduled Time: 21:08
+2024-04-12 21:08:03,284:ERROR:Type: Scheduled Failed to schedule send email for Test Schedule 2, error: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Outlook does not recognize one or more names. ', None, 0, -2147467259), None), retries left: 2
+2024-04-12 21:08:13,402:ERROR:Type: Scheduled Failed to schedule send email for Test Schedule 2, error: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Outlook does not recognize one or more names. ', None, 0, -2147467259), None), retries left: 1
+2024-04-12 21:08:23,551:ERROR:Type: Scheduled Failed to schedule send email for Test Schedule 2, error: (-2147352567, 'Exception occurred.', (4096, 'Microsoft Outlook', 'Outlook does not recognize one or more names. ', None, 0, -2147467259), None), retries left: 0
+2024-04-12 21:08:33,680:ERROR:Type: Scheduled Exhausted retries for sending schedule email for Test Schedule 2
+2024-04-12 21:10:33,695:INFO:Scheduled Flow Detected: Test Schedule 2, Type: Scheduled, To: sadsa@sadasd.sad, CC: , Attachments: D:/Modern Egypt/G7 Mall - Documents Submission/CPR/CPR-00008.xlsx, Tables: [], Scheduled Time: 21:10
+2024-04-12 21:10:33,742:INFO:Schedule Email sent successfully for 'Test Schedule 2', retries left: 3
+2024-04-12 21:13:52,436:INFO:Scheduled Flow Detected: Test Schedule 2, Type: Scheduled, To: sadsa@sadasd.sad, CC: , Attachments: D:/Modern Egypt/G7 Mall - Documents Submission/CPR/CPR-00005.xlsx, Tables: ['CPR-00005.xlsx - log - LogTable'], Scheduled Time: 21:13
+2024-04-12 21:13:52,648:INFO:Schedule Email sent successfully for 'Test Schedule 2', retries left: 3
+2024-04-12 21:17:52,703:INFO:Scheduled Flow Detected: Test Schedule 2, Type: Scheduled, To: sadsa@sadasd.sad, CC: , Attachments: D:/Modern Egypt/G7 Mall - Documents Submission/CPR/CPR-00006.xlsx, Tables: ['CPR-00006.xlsx - log - LogTable'], Scheduled Time: 21:17
+2024-04-12 21:17:52,850:INFO:Schedule Email sent successfully for 'Test Schedule 2', retries left: 3
+2024-04-12 21:46:52,922:INFO:Scheduled Flow Detected: Test Schedule 2, Type: Scheduled, To: sadsa@sadasd.sad, CC: , Attachments: D:/Modern Egypt/G7 Mall - Documents Submission/CPR/CPR-00006.xlsx, D:/Modern Egypt/G7 Mall - Documents Submission/CPR/CPR-00005.xlsx, Tables: ['CPR-00006.xlsx - log - LogTable', 'CPR-00005.xlsx - log - LogTable'], Scheduled Time: 21:46
+2024-04-12 21:46:53,202:INFO:Schedule Email sent successfully for 'Test Schedule 2', retries left: 3
+2024-04-12 21:47:19,034:WARNING:The function passed as setup to the icon did not finish within 5.0 seconds after icon was stopped
