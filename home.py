@@ -3,7 +3,6 @@ import os
 import tkinter as tk
 from tkinter import ttk, messagebox, simpledialog
 from tkinter import scrolledtext
-from Missed_Runs import analyze_missed_executions
 from main_ui import EmailAutomationApp  # Import Scheduled Email Flow Editor
 from ui_triggered_flow import setup_triggered_flow_ui  # Import Triggered Email Flow Editor
 from PIL import Image, ImageTk
@@ -53,17 +52,6 @@ class HomeApp:
                                             self.edit_triggered_flow, 
                                             self.delete_flow)
 
-
-    def create_missed_runs_section(self):
-        missed_runs_frame = ttk.LabelFrame(self.main_frame, text="Missed Runs")
-        missed_runs_frame.pack(fill='both', expand=True, padx=10, pady=10)
-
-        self.missed_runs_list = tk.Listbox(missed_runs_frame, height=5)
-        self.missed_runs_list.pack(fill='both', expand=True, padx=10, pady=10)
-
-        refresh_button = ttk.Button(missed_runs_frame, text="Refresh Missed Runs",
-                                    command=self.refresh_missed_runs)
-        refresh_button.pack(side='bottom', pady=5)
 
 
 
