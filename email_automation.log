@@ -1,0 +1,67 @@
+2024-04-12 17:45:57,787:ERROR:An error occurred when calling message handler
+Traceback (most recent call last):
+  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_win32.py", line 412, in _dispatcher
+    return int(icon._message_handlers.get(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_win32.py", line 224, in _on_notify
+    descriptors[index - 1](self)
+  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_base.py", line 328, in inner
+    callback(self)
+  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_base.py", line 453, in __call__
+    return self._action(icon, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\py\pr\email_automation_tool\background.py", line 139, in on_clicked
+    icon.stop()
+  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_base.py", line 252, in stop
+    self._setup_thread.join(timeout=self.SETUP_THREAD_TIMEOUT)
+  File "C:\Python312\Lib\threading.py", line 1130, in join
+    self._wait_for_tstate_lock(timeout=max(timeout, 0))
+  File "C:\Python312\Lib\threading.py", line 1146, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2024-04-12 17:47:21,315:ERROR:An error occurred when calling message handler
+Traceback (most recent call last):
+  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_win32.py", line 412, in _dispatcher
+    return int(icon._message_handlers.get(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_win32.py", line 224, in _on_notify
+    descriptors[index - 1](self)
+  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_base.py", line 328, in inner
+    callback(self)
+  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_base.py", line 453, in __call__
+    return self._action(icon, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\py\pr\email_automation_tool\background.py", line 150, in on_clicked
+    icon.stop()
+  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_base.py", line 252, in stop
+    self._setup_thread.join(timeout=self.SETUP_THREAD_TIMEOUT)
+  File "C:\Python312\Lib\threading.py", line 1130, in join
+    self._wait_for_tstate_lock(timeout=max(timeout, 0))
+  File "C:\Python312\Lib\threading.py", line 1146, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2024-04-12 17:47:33,680:ERROR:An error occurred when calling message handler
+Traceback (most recent call last):
+  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_win32.py", line 412, in _dispatcher
+    return int(icon._message_handlers.get(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_win32.py", line 224, in _on_notify
+    descriptors[index - 1](self)
+  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_base.py", line 328, in inner
+    callback(self)
+  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_base.py", line 453, in __call__
+    return self._action(icon, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\py\pr\email_automation_tool\background.py", line 150, in on_clicked
+    icon.stop()
+  File "D:\py\pr\email_automation_tool\venv\Lib\site-packages\pystray\_base.py", line 252, in stop
+    self._setup_thread.join(timeout=self.SETUP_THREAD_TIMEOUT)
+  File "C:\Python312\Lib\threading.py", line 1130, in join
+    self._wait_for_tstate_lock(timeout=max(timeout, 0))
+  File "C:\Python312\Lib\threading.py", line 1146, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2024-04-12 18:21:52,868:WARNING:The function passed as setup to the icon did not finish within 5.0 seconds after icon was stopped
