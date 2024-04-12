@@ -1,0 +1,9 @@
+{
+    "folder": "C:/Users/Kareem ElThirD/Desktop/emails/Mohamed_Purchase_order",
+    "email_details": {
+        "to_email": "k.hassan@modern-egypt.com",
+        "cc_email": "",
+        "subject": "Test Triggered Flows {now}",
+        "body": "PR for {Today}\n\n\n"
+    }
+}
