@@ -1,0 +1,4 @@
+1- Install Python
+2- Install Requirements -> CMD on Downloaded Folder -> pip install -r requirements.txt
+3- Run This File To Add To Startup Folder to keep app runing on login
+4- App will appear on taskbar tray

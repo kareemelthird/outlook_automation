@@ -25,3 +25,4 @@ tzdata==2024.1
 watchdog==4.0.0
 winshell==0.6
 xlrd==2.0.1
+winshell
