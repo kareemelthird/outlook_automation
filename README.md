@@ -1,8 +1,8 @@
-# K3 Email Automation Tool
+# K3 Outlook Automation Tool
 
 ## Introduction
 
-The K3 Email Automation Tool is a comprehensive solution designed to enhance email productivity and automation. Leveraging Python's versatility, this tool integrates seamlessly with Microsoft Outlook to schedule and send emails automatically, enriched with dynamic content from Excel files.
+The K3 Outlook Automation Tool is a comprehensive solution designed to enhance email productivity and automation. Leveraging Python's versatility, this tool integrates seamlessly with Microsoft Outlook to schedule and send emails automatically, enriched with dynamic content from Excel files.
 
 ## Key Features
 
