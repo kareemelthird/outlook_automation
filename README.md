@@ -14,7 +14,6 @@ The K3 Email Automation Tool is a comprehensive solution designed to enhance ema
 -  **Placeholders**: Insert {today}, {now} actual time and date for sent emails.
 -  **Windows Notifications**: Get windows notification for sent email.
  
-  - 
 ## Prerequisites
 
 Before you begin, ensure you have the following:
