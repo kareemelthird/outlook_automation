@@ -96,3 +96,4 @@ Traceback (most recent call last):
   File "C:\Python312\Lib\site-packages\pystray\_base.py", line 110, in __call__
     self._menu(self)
 TypeError: 'tuple' object is not callable
+2024-04-13 02:15:17,669:WARNING:The function passed as setup to the icon did not finish within 5.0 seconds after icon was stopped
