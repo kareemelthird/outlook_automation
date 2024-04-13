@@ -5,40 +5,28 @@ import winshell
 def find_pythonw():
     # Check a common path for Python installation; adjust as necessary for typical installs
     common_paths = [
-        r"C:\Python39\pythonw.exe",  # Adjust the version number as necessary
+        r"C:\Python39\pythonw.exe",
         r"C:\Python310\pythonw.exe",
-        "C:\Python310\pythonw.exe",
-        "C:\Python311\pythonw.exe",
-        "C:\Python312\pythonw.exe",
-        "C:\Python313\pythonw.exe",
+        r"C:\Python311\pythonw.exe",
         r"C:\Program Files\Python39\pythonw.exe",
         r"C:\Program Files\Python310\pythonw.exe",
         r"C:\Program Files\Python311\pythonw.exe",
-        r"C:\Program Files\Python312\pythonw.exe",
-        r"C:\Program Files\Python313\pythonw.exe",
-        r"C:\Program Files\Python314\pythonw.exe",
     ]
     for path in common_paths:
         if os.path.exists(path):
             return path
-    # Fallback to the current executable if none of the common paths fit
+    # Fallback to the executable replacing 'python.exe' with 'pythonw.exe'
     return sys.executable.replace("python.exe", "pythonw.exe")
 
-def create_shortcut_to_startup():
-    # Use the helper function to find pythonw.exe
+def create_shortcut_and_run():
     pythonw_path = find_pythonw()
     
-    # Determine the absolute path to the script you want to run at startup
     script_directory = os.path.dirname(os.path.abspath(__file__))
-    script_path = os.path.join(script_directory, "background.py")
+    script_path = os.path.join(script_directory, "background.py")  # Ensure you have a .pyw version of your script
     
-    # Path to the Startup folder for the current user
     startup_folder = winshell.startup()
+    shortcut_path = os.path.join(startup_folder, "K3 Outlook Automation.lnk")
     
-    # Full path for the new shortcut in the Startup folder
-    shortcut_path = os.path.join(startup_folder, "BackgroundApp.lnk")
-    
-    # Create a shortcut to run the script using pythonw.exe
     with winshell.shortcut(shortcut_path) as shortcut:
         shortcut.path = pythonw_path
         shortcut.arguments = f'"{script_path}"'
@@ -48,5 +36,9 @@ def create_shortcut_to_startup():
 
     print(f"Shortcut created: {shortcut_path}")
 
+    # Run the shortcut
+    os.startfile(shortcut_path)
+    print("Shortcut executed.")
+
 if __name__ == "__main__":
-    create_shortcut_to_startup()
+    create_shortcut_and_run()
